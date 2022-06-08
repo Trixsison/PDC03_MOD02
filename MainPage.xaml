@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC3_MOD2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DeepPink" Padding="24" CornerRadius="0">
+            <Label Text="My First Xamarin Activities!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily=""/>
+        </Frame>
+        <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>-->
+        <Label Text="Xamarin is new to me. My first exercises located below." FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Click each button below to see specific activity I've done about basic Xamarin."/>
+                        <!--<Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>-->
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Text="Go to Activity 1 XAML Page and Navigation" Clicked="OnNextPage"/>
+        <Button Text="Go to Activity 2 XAML and Code Interactions" Clicked="OnActivity2"/>
+        <Button Text="Go to Activity 3 Binding" Clicked="OnActivity3"/>
+        <Button Text="Go to Activity 4 Data Binding Mode and Grid" Clicked="OnActivity4"/>
+    </StackLayout>
+
+</ContentPage>

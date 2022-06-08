@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC3_MOD2.activity2" Title="XAML and Code Interactions">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Aqua" Padding="15" CornerRadius="0">
+                <Slider VerticalOptions="CenterAndExpand" ValueChanged="OnSliderValueChanged"/>
+            </Frame>
+            <Label x:Name="valuelabel"
+                   Text="Slide it to adjust value"
+                   TextColor="DeepPink"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Button Text="Click this" Clicked="OnButtonClicked"/>
+
+            <Button Text="Back" Clicked="BackPage"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
